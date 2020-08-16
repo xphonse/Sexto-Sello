@@ -1,6 +1,8 @@
 export const CantosData = [
-    {
-        "id": "3",
+    {   
+        
+        "id":"0",
+        "pag": "3",
         "titulo": "LEVANTATE, ISRAEL",
         "contenido": [
             {
@@ -26,7 +28,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "4",
+        "id":"1",
+        "pag": "4",
         "titulo": "JESUS",
         "contenido": [
             {
@@ -49,7 +52,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "5",
+        "id":"2",
+        "pag": "5",
         "titulo": "¡ AL REY DE LOS CIELOS !",
         "contenido": [
             {
@@ -80,7 +84,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "6",
+        "id":"3",
+        "pag": "6",
         "titulo": "¡ DE JUBILOS LLENOS!",
         "contenido": [
             {
@@ -103,7 +108,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "7",
+        "id":"4",
+        "pag": "7",
         "titulo": "ES LA VIRGEN",
         "contenido": [
             {
@@ -117,7 +123,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "8",
+        "id":"5",
+        "pag": "8",
         "titulo": "CAMPANITAS",
         "contenido": [
             {
@@ -139,7 +146,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "9",
+        "id":"6",
+        "pag": "9",
         "titulo": "TU REINARAS ",
         "contenido": [
             {
@@ -165,7 +173,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "10",
+        "id":"7",
+        "pag": "10",
         "titulo": "NOS VEREMOS EN EL RIO",
         "contenido": [
             {
@@ -195,7 +204,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "11",
+        "id":"8",
+        "pag": "11",
         "titulo": "MAS LINDA QUE LAS FLORES",
         "contenido": [
             {
@@ -217,7 +227,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "12",
+        "id":"9",
+        "pag": "12",
         "titulo": "JESUS ES MI REY SOBERANO",
         "contenido": [
             {
@@ -239,7 +250,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "13",
+        "id":"10",
+        "pag": "13",
         "titulo": "¡ A JESUCRISTO VEN SIN TARDAR!",
         "contenido": [
             {
@@ -265,7 +277,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "14",
+        "id":"11",
+        "pag": "14",
         "titulo": "¡ JUSTO A MI DIOS, DESEO ¡",
         "contenido": [
             {
@@ -284,7 +297,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "15",
+        "id":"12",
+        "pag": "15",
         "titulo": "SEMBRARE LA SIMIENTE PRECIOSA",
         "contenido": [
             {
@@ -311,7 +325,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "16",
+        "id":"13",
+        "pag": "16",
         "titulo": "YO QUIERO TRABAJAR POR EL SEÑOR",
         "contenido": [
             {
@@ -338,7 +353,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "17",
+        "id":"14",
+        "pag": "17",
         "titulo": "¡ ES UN ASTRO LUMINOSO!",
         "contenido": [
             {
@@ -360,7 +376,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "18",
+        "id":"15",
+        "pag": "18",
         "titulo": "NITIDO RAYO ",
         "contenido": [
             {
@@ -390,7 +407,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "19",
+        "id":"16",
+        "pag": "19",
         "titulo": "SEGUID AL MAESTRO",
         "contenido": [
             {
@@ -417,7 +435,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "20",
+        "id":"17",
+        "pag": "20",
         "titulo": "i GRACIAS, SEÑOR...!",
         "contenido": [
             {
@@ -444,7 +463,8 @@ export const CantosData = [
         ]
     },
     {
-        "id": "21",
+        "id":"18",
+        "pag": "21",
         "titulo": "MARCHAD , MARCHAD ISRAEL",
         "contenido": [
             {

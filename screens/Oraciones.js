@@ -7,7 +7,7 @@ import { OracionesData } from '../data/Oraciones'
 const Oraciones = props => {
 
     const listOraciones = OracionesData.map((oracion) =>
-        <Boton key={oracion.id} debug={oracion} navigation={props.navigation} list={oracion.id} titulo={oracion.titulo} >{oracion.titulo}</Boton>
+        <Boton key={oracion.id} debug={oracion} navigation={props.navigation} pag={oracion.pag} list={oracion.id} titulo={oracion.titulo} >{oracion.titulo}</Boton>
     );
 
     return (
@@ -25,11 +25,10 @@ const Boton = props => {
     return (
         <TouchableOpacity onPress={() => props.navigation.navigate('Oracion', {
             id: props.list,
-            titulo: props.titulo,
-            param: 'asdf'
+            titulo: props.titulo
         })}>
             <View style={styles.item}>
-                <Text numberOfLines={1} style={styles.title}>{props.list}.- {props.titulo}</Text>
+                <Text numberOfLines={1} style={styles.title}>{props.pag}.- {props.titulo}</Text>
             </View>
         </TouchableOpacity>
     )
@@ -37,7 +36,8 @@ const Boton = props => {
 
 export const oracionesScreenOptions = navData => {
     return {
-        headerShown: true
+        headerShown: true,
+        title:"MENÚ PRINCIPAL"
     }
 }
 

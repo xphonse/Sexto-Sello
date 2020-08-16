@@ -1,6 +1,7 @@
 export const OracionesData = [
     {
-        "id": "1",
+        "id": "0",
+        "pag":"1",
         "titulo": "ORACIONES DADAS AL SEXTO SELLO",
         "contenido": [
             {
@@ -22,7 +23,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "2",
+        "id": "1",
+        "pag":"2",
         "titulo": "ACTO DE CONTRICIÓN",
         "contenido": [
             {
@@ -40,7 +42,8 @@ export const OracionesData = [
 
     },
     {
-        "id": "3",
+        "id": "2",
+        "pag":"3",
         "titulo": "ORACION",
         "contenido": [
             {
@@ -51,7 +54,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "4",
+        "id": "3",
+        "pag":"4",
         "titulo": "PADRE NUESTRO",
         "contenido": [
             {
@@ -70,7 +74,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "5",
+        "id": "4",
+        "pag":"5",
         "titulo": "AVE MARIA",
         "contenido": [
             {
@@ -80,7 +85,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "6",
+        "id": "5",
+        "pag":"6",
         "titulo": "ORACION DADA POR NUESTRO DIOS",
         "contenido": [
             {
@@ -94,7 +100,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "7",
+        "id": "6",
+        "pag":"7",
         "titulo": "ORACION",
         "contenido": [
             {
@@ -104,7 +111,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "8",
+        "id": "7",
+        "pag":"8",
         "titulo": "CREDO ",
         "contenido": [
             {
@@ -114,7 +122,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "9",
+        "id": "8",
+        "pag":"9",
         "titulo": "LOS PRECEPTOS DE MOISES, DE JESUS Y LOS DE ELIAS, EL HIJO DEL HOMBRE",
         "contenido": [
             {
@@ -128,7 +137,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "10",
+        "id": "9",
+        "pag":"10",
         "titulo": "PRECES",
         "contenido": [
             {
@@ -146,7 +156,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "11",
+        "id": "10",
+        "pag":"11",
         "titulo": "CANTICOS ",
         "contenido": [
             {
@@ -161,7 +172,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "12",
+        "id": "11",
+        "pag":"12",
         "titulo": "INVOCACION PARA EL DESCENDIMIENTO",
         "contenido": [
             {
@@ -203,7 +215,8 @@ export const OracionesData = [
         ]
     },
     {
-        "id": "13",
+        "id": "12",
+        "pag":"13",
         "titulo": "PARA DAR GRACIAS",
         "contenido": [
             {

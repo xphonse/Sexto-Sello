@@ -7,7 +7,7 @@ import { CantosData } from '../data/Cantos'
 const Cantos = props => {
 
     const listOraciones = CantosData.map((oracion) =>
-        <Boton key={oracion.id} debug={oracion} navigation={props.navigation} list={oracion.id} titulo={oracion.titulo} >{oracion.titulo}</Boton>
+        <Boton key={oracion.id} debug={oracion} navigation={props.navigation} pag={oracion.pag}  list={oracion.id} titulo={oracion.titulo} >{oracion.titulo}</Boton>
     );
 
     return (
@@ -28,15 +28,16 @@ const Boton = props => {
             titulo: props.titulo,
         })}>
             <View style={styles.item}>
-                <Text numberOfLines={1} style={styles.title}>{props.list}.- {props.titulo}</Text>
+                <Text numberOfLines={1} style={styles.title}>{props.pag}.- {props.titulo}</Text>
             </View>
         </TouchableOpacity>
     )
 }
 
-export const oracionesScreenOptions = navData => {
+export const cantosScreenOptions = navData => {
     return {
-        headerShown: true
+        headerShown: true,
+        title:"MENÚ PRINCIPAL"
     }
 }
 

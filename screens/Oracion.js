@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, ScrollView } from 'react-native';
-import MainFrame from '../components/MainFrame'
+import FooterArrows from '../components/FooterArrows'
+
 
 import { OracionesData } from '../data/Oraciones'
 
 const Contenido = props => {
 
     const style = props.datos.estilo
-    console.log(style)
 
     let newText = props.datos.texto.split('/n').map(text => {
         return (<View style={styles.parrafoView}>
@@ -30,8 +30,9 @@ const Contenido = props => {
 const Oracion = props => {
 
     const idOracion = props.route.params.id;
-    const { titulo } = props.route.params;
-    const aFiltrar = OracionesData[idOracion - 1].contenido
+    const aFiltrar = OracionesData[idOracion].contenido
+    const titulo = OracionesData[idOracion].titulo
+    const noData=OracionesData.length;
 
     const listaParrafos = aFiltrar.map((oracion) =>
         <View>
@@ -40,21 +41,22 @@ const Oracion = props => {
     );
 
     return (
-        <MainFrame><ScrollView>
-            <View style={styles.container}>
-                <Text style={styles.title}>{titulo}</Text>
+        <View style={{ flex: 1 }}>
+            <ScrollView contentContainerStyle={{ flexGrow: 1, padding: 10, backgroundColor: 'white' }}>
+                <View style={styles.container}>
+                <Text style={styles.title}>{OracionesData[idOracion].pag} - {titulo}</Text>
                 {listaParrafos}
-            </View>
-        </ScrollView>
-        </MainFrame>
+                </View>
+            </ScrollView>
+            <FooterArrows sendTo="Oracion" id={props.route.params.id} navigation={props.navigation} noData={noData} />
+        </View>
 
     );
 }
 
 export const oracionScreenOptions = navData => {
-    const { titulo } = navData.route.params;
     return {
-        title: titulo
+        title: "ORACIONES"
     }
 }
 
@@ -75,7 +77,8 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        width:'100%'
     },
     parrafo: {
         fontSize: 16,

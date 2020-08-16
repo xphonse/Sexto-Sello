@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import MainFrame from '../components/MainFrame'
+import FooterArrows from '../components/FooterArrows'
 
 import { CantosData } from '../data/Cantos'
+import { ForceTouchGestureHandler } from 'react-native-gesture-handler';
 
 const Contenido = props => {
+
+    
 
     let newText = props.datos.texto.split('/n').map(text => {
         return (<View style={styles.parrafoView}>
@@ -14,7 +17,6 @@ const Contenido = props => {
             </Text>
         </View>)
     })
-
 
     return (
 
@@ -28,32 +30,33 @@ const Contenido = props => {
 const Canto = props => {
 
     const idOracion = props.route.params.id;
-    const { titulo } = props.route.params;
     const aFiltrar2 = CantosData.filter(Canto => Canto.id == idOracion)
-    const aFiltrar3= aFiltrar2[0].contenido
+    const aFiltrar3 = aFiltrar2[0].contenido
+    const noData=CantosData.length;
 
     const listaParrafos = aFiltrar3.map((oracion) =>
-        <View>
+        <View key={Math.random()} >
             <Contenido datos={oracion} key={Math.random()} />
         </View>
     );
-
     return (
-        <MainFrame><ScrollView>
-            <View style={styles.container}>
-                <Text style={styles.title}>{titulo}</Text>
-                {listaParrafos}
-            </View>
-        </ScrollView>
-        </MainFrame>
+        <View style={{ flex: 1 }}>
+            <ScrollView 
+            contentContainerStyle={{flexGrow: 1,padding:10,backgroundColor:'white'}}>
+                <View style={styles.container}>
+                    <Text style={styles.title}>{aFiltrar2[0].pag} - {aFiltrar2[0].titulo}</Text>
+                    {listaParrafos}
+                </View>
+            </ScrollView>
+            <FooterArrows sendTo='Canto' id={props.route.params.id} navigation={props.navigation} noData={noData} />
+        </View>
 
     );
 }
 
 export const cantoScreenOptions = navData => {
-    const { titulo } = navData.route.params;
     return {
-        title: titulo
+        title: "CANTOS"
     }
 }
 
@@ -67,7 +70,8 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        width:'100%'
     },
     parrafo: {
         fontSize: 16,
@@ -82,7 +86,8 @@ const styles = StyleSheet.create({
     parrafoView: {
         paddingVertical: 2,
         width: '100%',
-    }
+    },
+
 
 });
 
